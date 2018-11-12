@@ -36,8 +36,20 @@ h2 {
 	justify-content: center;
 }
 
+#page2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#page3 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
 .box {
-	width: 48%;
+	width: 45%;
 	height: 300px;
 	text-align: center;
 	display: flex;
@@ -48,3 +60,31 @@ h2 {
 .box h2 {
 	align-self: center;
 }
+
+
+
+.hide {
+	visibility: hidden;
+	height: 0;
+}
+.show {
+	visibility: visible;
+}
+.blue {
+	color: aqua;
+	transition: all 1s;
+}
+/*
+@keyframes moveup {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(-50px);
+	}
+}
+
+.transition {
+	animation: moveup 2s;
+}
+*/
