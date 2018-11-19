@@ -74,6 +74,8 @@ h2 {
 	color: aqua;
 	transition: all 1s;
 }
+
+
 /*
 @keyframes moveup {
 	0% {
@@ -128,4 +130,17 @@ h2 {
 .transition-right {
 	animation: moveright 2s;
 }
+
+
+
+
+
+.fortune-show {
+	opacity: 1 !important;
+	transition: opacity 3s ease-in;
+
+
+
+
+	
 */

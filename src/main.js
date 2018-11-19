@@ -106,10 +106,26 @@ function wrapper3() {
 		setTimeout(function() {
 			page3.classList.add('hide');
 			page3.classList.remove('show');
-//			pageFortune.classList.add('show');
+			pageFortune.classList.add('show');
+			showFortune();
 		}, numberValue * 1000);
 	};
 	loopThrough3();
+};
+
+
+
+
+const fortunes = ['1','2','3'];
+const yourFortune = document.querySelector('#pagefortune');
+const fortuneTextPlaceholder = document.createTextNode('');
+yourFortune.appendChild(fortuneTextPlaceholder);
+
+const showFortune = () => {
+	fortunes.sort(function(a, b){return 0.5 - Math.random()});
+	const fortuneText = document.createTextNode(fortunes[0]);
+	yourFortune.appendChild(fortuneText);
+	yourFortune.classList.add('fortune-show');
 };
 
 
@@ -121,10 +137,6 @@ for(let i = 0; i < boxText1.length; i++) {
 	boxText2[i].addEventListener('click', wrapper2);
 	boxText3[i].addEventListener('click', wrapper3);
 };
-
-
-
-
 
 
 
