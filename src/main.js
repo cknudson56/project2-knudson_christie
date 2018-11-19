@@ -8,14 +8,17 @@ const boxText3 = document.querySelectorAll('#page3 div h2');
 
 
 
-
-const top = document.querySelector('.top');
-const bottom = document.querySelector('.bottom');
-const left = document.querySelector('.left');
-const right = document.querySelector('.right');
+//change "top"
+const top = document.querySelectorAll('.top');
+const bottom = document.querySelectorAll('.bottom');
+const left = document.querySelectorAll('.left');
+const right = document.querySelectorAll('.right');
 const firstFunctionIndexNumbers = [0,1,4,5,8,9,12,13,16,17,20,21,24,25];
 const upDown = () => {
-	top.classList.toggle('transition-up');
+	//for loop for each top and bottom
+	for(let i = 0; i < top.length; i++) {
+		top[i].classList.toggle('transition-up');
+	};
 	bottom.classList.toggle('transition-down');
 };
 const leftRight = () => {
@@ -27,22 +30,17 @@ const leftRight = () => {
 
 
 function wrapper() {
-	const moveChange = () => {
-		boxText1.classList.toggle('blue');
-	};
-
 	const loopThrough = () => {
 		let thisBoxText = this.childNodes[0].nodeValue;
 		let thisBoxLength = thisBoxText.length;
 
 		for (let i = 0; i < thisBoxLength * 2; i++) {
 			setTimeout(function() {
-				moveChange();
-//				if (firstFunctionIndexNumbers.includes(i)) {
-//					upDown();
-//				} else {
-//					leftRight();
-//				}
+				if (firstFunctionIndexNumbers.includes(i)) {
+					upDown();
+				} else {
+					leftRight();
+				}
 			}, i * 500);
 		}
 		setTimeout(function() {
@@ -50,6 +48,7 @@ function wrapper() {
 			page2.classList.remove('hide');
 			page2.classList.add('show');
 		}, thisBoxLength * 1000);
+		//play around with the timing
 	};
 	loopThrough();
 };
@@ -130,7 +129,7 @@ function wrapper3() {
 
 
 
-
+//double check the boxText1.length
 for(let i = 0; i < boxText1.length; i++) {
 	boxText1[i].addEventListener('click', wrapper);
 	boxText2[i].addEventListener('click', wrapper2);
