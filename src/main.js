@@ -1,7 +1,6 @@
 const page1 = document.querySelector('#page1');
 const page2 = document.querySelector('#page2');
 const page3 = document.querySelector('#page3');
-//const pageFortune = document.querySelector('#pagefortune');
 const boxText1 = document.querySelectorAll('#page1 div h2');
 const boxText2 = document.querySelectorAll('#page2 div h2');
 const boxText3 = document.querySelectorAll('#page3 div h2');
@@ -38,12 +37,12 @@ function wrapper() {
 
 		for (let i = 0; i < thisBoxLength * 2; i++) {
 			setTimeout(function() {
-//				moveChange();
-				if (firstFunctionIndexNumbers.includes(i)) {
-					upDown();
-				} else {
-					leftRight();
-				}
+				moveChange();
+//				if (firstFunctionIndexNumbers.includes(i)) {
+//					upDown();
+//				} else {
+//					leftRight();
+//				}
 			}, i * 500);
 		}
 		setTimeout(function() {
@@ -106,8 +105,8 @@ function wrapper3() {
 		setTimeout(function() {
 			page3.classList.add('hide');
 			page3.classList.remove('show');
-			pageFortune.classList.add('show');
-			showFortune();
+//			pageFortune.classList.add('show');
+//			showFortune();
 		}, numberValue * 1000);
 	};
 	loopThrough3();
@@ -116,17 +115,17 @@ function wrapper3() {
 
 
 
-const fortunes = ['1','2','3'];
-const yourFortune = document.querySelector('#pagefortune');
-const fortuneTextPlaceholder = document.createTextNode('');
-yourFortune.appendChild(fortuneTextPlaceholder);
+//const fortunes = ['1','2','3'];
+//const yourFortune = document.querySelector('#pagefortune');
+//const fortuneTextPlaceholder = document.createTextNode('');
+//yourFortune.appendChild(fortuneTextPlaceholder);
 
-const showFortune = () => {
-	fortunes.sort(function(a, b){return 0.5 - Math.random()});
-	const fortuneText = document.createTextNode(fortunes[0]);
-	yourFortune.appendChild(fortuneText);
-	yourFortune.classList.add('fortune-show');
-};
+//const showFortune = () => {
+//	fortunes.sort(function(a, b){return 0.5 - Math.random()});
+//	const fortuneText = document.createTextNode(fortunes[0]);
+//	yourFortune.appendChild(fortuneText);
+//	yourFortune.classList.add('fortune-show');
+//};
 
 
 
