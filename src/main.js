@@ -9,7 +9,7 @@ const boxText3 = document.querySelectorAll('#page3 div h2');
 
 
 //change "top"
-const top = document.querySelectorAll('.top');
+const topBlock = document.querySelectorAll('.top-block');
 const bottom = document.querySelectorAll('.bottom');
 const left = document.querySelectorAll('.left');
 const right = document.querySelectorAll('.right');
@@ -17,13 +17,19 @@ const firstFunctionIndexNumbers = [0,1,4,5,8,9,12,13,16,17,20,21,24,25];
 const upDown = () => {
 	//for loop for each top and bottom
 	for(let i = 0; i < top.length; i++) {
-		top[i].classList.toggle('transition-up');
+		topBlock[i].classList.toggle('transition-up');
 	};
-	bottom.classList.toggle('transition-down');
+	for(let i = 0; i < bottom.length; i++) {
+		bottom[i].classList.toggle('transition-down');
+	};
 };
 const leftRight = () => {
-	left.classList.toggle('transition-left');
-	right.classList.toggle('transition-right');
+	for(let i = 0; i < left.length; i++) {
+		left[i].classList.toggle('transition-left');
+	};
+	for(let i = 0; i < right.length; i++) {
+		right[i].classList.toggle('transition-right');
+	};
 };
 
 
@@ -132,8 +138,8 @@ function wrapper3() {
 //double check the boxText1.length
 for(let i = 0; i < boxText1.length; i++) {
 	boxText1[i].addEventListener('click', wrapper);
-	boxText2[i].addEventListener('click', wrapper2);
-	boxText3[i].addEventListener('click', wrapper3);
+//	boxText2[i].addEventListener('click', wrapper2);
+//	boxText3[i].addEventListener('click', wrapper3);
 };
 
 
