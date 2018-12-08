@@ -10,11 +10,11 @@ font-family: 'Roboto Condensed', sans-serif;
 	padding: 0;
 	border: 0;
 }
-
+/*
 article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
     display:block;
 }
-
+*/
 body {
 	width: 99vw;
 	height: 99vh;
@@ -23,6 +23,8 @@ body {
 h1 {
 	font-family: 'Fredoka One', cursive;
 	font-size: 3rem;
+	padding: 50px 0 50px 0;
+	text-align: center;
 }
 
 h2 {
@@ -62,21 +64,15 @@ h2 {
 }
 
 
-
 .hide {
-	visibility: hidden;
-	height: 0;
+	display: none !important;
 }
 .show {
-	visibility: visible;
-}
-.blue {
-	color: aqua;
-	transition: all 1s;
+	display: block;
 }
 
 
-/*
+
 @keyframes moveup {
 	0% {
 		transform: translateY(0);
@@ -86,7 +82,7 @@ h2 {
 	}
 }
 .transition-up {
-	animation: moveup 2s;
+	animation: moveup 1s;
 }
 
 
@@ -100,7 +96,7 @@ h2 {
 	}
 }
 .transition-down {
-	animation: movedown 2s;
+	animation: movedown 1s;
 }
 
 
@@ -114,7 +110,7 @@ h2 {
 	}
 }
 .transition-left {
-	animation: moveleft 2s;
+	animation: moveleft 1s;
 }
 
 
@@ -128,12 +124,20 @@ h2 {
 	}
 }
 .transition-right {
-	animation: moveright 2s;
+	animation: moveright 1s;
 }
 
 
 
-
+#pagefortune {
+	width: 300px;
+	margin: auto;
+	font-family: 'Fredoka One', cursive;
+	font-size: 2rem;
+	text-align: center;
+	padding: 75px 75px;
+	background-color: aqua;
+}
 
 .fortune-show {
 	opacity: 1 !important;
@@ -143,4 +147,4 @@ h2 {
 
 
 	
-*/
+
