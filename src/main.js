@@ -47,13 +47,13 @@ function wrapper() {
 				} else {
 					leftRight();
 				}
-			}, i * 500);
+			}, i * 300);
 		}
 		setTimeout(function() {
 			page1.classList.add('hide');
 			page2.classList.remove('hide');
 			page2.classList.add('show');
-		}, thisBoxLength * 1000);
+		}, thisBoxLength * 600);
 		//play around with the timing
 	};
 	loopThrough();
@@ -76,14 +76,14 @@ function wrapper2() {
 				} else {
 					leftRight();
 				}
-			}, i * 500);
+			}, i * 300);
 		}
 		setTimeout(function() {
 			page2.classList.add('hide');
 			page2.classList.remove('show');
 			page3.classList.remove('hide');
 			page3.classList.add('show');
-		}, numberValue * 1000);
+		}, numberValue * 600);
 	};
 	loopThrough2();
 };
@@ -105,7 +105,7 @@ function wrapper3() {
 				} else {
 					leftRight();
 				}
-			}, i * 500);
+			}, i * 300);
 		}
 		setTimeout(function() {
 			page3.classList.add('hide');
@@ -113,7 +113,7 @@ function wrapper3() {
 			yourFortune.classList.remove('hide');
 			yourFortune.classList.add('show');
 			showFortune();
-		}, numberValue * 1000);
+		}, numberValue * 600);
 	};
 	loopThrough3();
 };
@@ -129,7 +129,8 @@ const showFortune = () => {
 	fortunes.sort(function(a, b){return 0.5 - Math.random()});
 	const fortuneText = document.createTextNode(fortunes[0]);
 	yourFortune.appendChild(fortuneText);
-	yourFortune.classList.add('fortune-show');
+//	yourFortune.classList.add('fortune-show');
+// 	class not showing?
 };
 
 

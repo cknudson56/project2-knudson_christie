@@ -82,7 +82,7 @@ h2 {
 	}
 }
 .transition-up {
-	animation: moveup 1s;
+	animation: moveup 0.5s;
 }
 
 
@@ -96,7 +96,7 @@ h2 {
 	}
 }
 .transition-down {
-	animation: movedown 1s;
+	animation: movedown 0.5s;
 }
 
 
@@ -110,7 +110,7 @@ h2 {
 	}
 }
 .transition-left {
-	animation: moveleft 1s;
+	animation: moveleft 0.5s;
 }
 
 
@@ -124,7 +124,7 @@ h2 {
 	}
 }
 .transition-right {
-	animation: moveright 1s;
+	animation: moveright 0.5s;
 }
 
 
