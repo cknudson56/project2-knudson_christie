@@ -25,6 +25,7 @@ h1 {
 	font-size: 3rem;
 	padding: 50px 0 50px 0;
 	text-align: center;
+	color: #292F36;
 }
 
 h2 {
@@ -156,9 +157,10 @@ h2 {
 	margin: auto;
 	font-family: 'Fredoka One', cursive;
 	font-size: 2rem;
+	color: #292F36;
 	text-align: center;
 	padding: 75px 75px;
-	background-color: aqua;
+	background-color: #4ECDC4;
 	border-radius: 25px;
 }
 
@@ -183,7 +185,7 @@ h2 {
 }
 
 .turquoise {
-	color: #05A8AA;
+	color: #4ECDC4;
 }
 
 .blue {
