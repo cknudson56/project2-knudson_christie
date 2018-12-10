@@ -9,9 +9,24 @@ const boxText1 = document.querySelectorAll('#page1 div');
 const boxText2 = document.querySelectorAll('#page2 div');
 const boxText3 = document.querySelectorAll('#page3 div');
 
+const firstFunctionIndexNumbers = [0,1,4,5,8,9,12,13,16,17,20,21,24,25];
+
+
 function wrapper() {
 	const loopThrough = () => {
+		let thisBoxText = this.childNodes[0].innerHTML;
+		let thisBoxLength = thisBoxText.length;
 
+		for(let i = 0; i < thisBoxLength * 2; i++) {
+			setTimeout(function() {
+				if (firstFunctionIndexNumbers.includes(i)) {
+
+				} else {
+
+				}
+				
+			}, i * 500);
+		}
 	};
 	loopThrough();
 };
