@@ -51,6 +51,7 @@ function wrapper() {
 	loopThrough();
 };
 
-for(let i = 0; i < boxText1; i++) {
+
+for(let i = 0; i < boxText1.length; i++) {
 	boxText1[i].addEventListener('click', wrapper);
 };
