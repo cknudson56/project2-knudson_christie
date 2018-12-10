@@ -63,7 +63,13 @@ h2 {
 	align-self: center;
 }
 
+.hide {
+	display: none !important;
+}
 
+.show {
+	display: block;
+}
 
 
 @keyframes moveup {
