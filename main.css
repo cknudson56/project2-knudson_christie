@@ -38,6 +38,18 @@ h2 {
 	justify-content: center;
 }
 
+#page2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#page3 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
 .box {
 	width: 48%;
 	height: 300px;
