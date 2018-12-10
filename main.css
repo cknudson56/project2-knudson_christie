@@ -83,7 +83,7 @@ h2 {
 	}
 }
 .transition-up {
-	animation: moveup 0.5s ease-out;
+	animation: moveup 400ms ease-out;
 	animation-direction: alternate;
 }
 
@@ -99,7 +99,7 @@ h2 {
 	}
 }
 .transition-down {
-	animation: movedown 0.5s ease-out;
+	animation: movedown 400ms ease-out;
 	animation-direction: alternate;
 }
 
@@ -115,7 +115,7 @@ h2 {
 	}
 }
 .transition-left {
-	animation: moveleft 0.5s ease-out;
+	animation: moveleft 400ms ease-out;
 	animation-direction: alternate;
 }
 
@@ -131,7 +131,7 @@ h2 {
 	}
 }
 .transition-right {
-	animation: moveright 0.5s ease-out;
+	animation: moveright 400ms ease-out;
 	animation-direction: alternate;
 }
 

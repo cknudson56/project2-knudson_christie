@@ -45,13 +45,13 @@ function wrapper() {
 				} else {
 					leftRight();
 				}
-			}, i * 500);
+			}, i * 400);
 		}
 		setTimeout(function() {
 			page1.classList.add('hide');
 			page2.classList.remove('hide');
 			page2.classList.add('show');
-		}, thisBoxLength * 1000);
+		}, thisBoxLength * 800);
 	};
 	loopThrough();
 };
@@ -68,14 +68,14 @@ function wrapper2() {
 				} else {
 					leftRight();
 				}
-			}, i * 500);
+			}, i * 400);
 		}
 		setTimeout(function() {
 			page2.classList.add('hide');
 			page2.classList.remove('show');
 			page3.classList.remove('hide');
 			page3.classList.add('show');
-		}, numberValue * 1000);
+		}, numberValue * 800);
 	};
 	loopThrough2();
 };
@@ -92,7 +92,7 @@ function wrapper3() {
 				} else {
 					leftRight();
 				}
-			}, i * 500);
+			}, i * 400);
 		}
 		setTimeout(function() {
 			page3.classList.add('hide');
@@ -100,7 +100,7 @@ function wrapper3() {
 			yourFortune.classList.remove('hide');
 			yourFortune.classList.add('show');
 			showFortune();
-		}, numberValue * 1000);
+		}, numberValue * 800);
 	};
 	loopThrough3();
 };
