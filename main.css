@@ -56,11 +56,27 @@ h2 {
 	text-align: center;
 	display: flex;
 	justify-content: center;
-	border: 5px solid grey;
+	border: solid grey;
 }
 
 .box h2 {
 	align-self: center;
+}
+
+.top-block.left{
+	border-width: 10px 5px 5px 10px;
+}
+
+.top-block.right {
+	border-width: 10px 10px 5px 5px;
+}
+
+.bottom.left {
+	border-width: 5px 5px 10px 10px;
+}
+
+.bottom.right {
+	border-width: 5px 10px 10px 5px;
 }
 
 .hide {
