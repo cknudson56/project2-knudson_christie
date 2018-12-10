@@ -9,3 +9,13 @@ const boxText1 = document.querySelectorAll('#page1 div');
 const boxText2 = document.querySelectorAll('#page2 div');
 const boxText3 = document.querySelectorAll('#page3 div');
 
+function wrapper() {
+	const loopThrough = () => {
+
+	};
+	loopThrough();
+};
+
+for(let i = 0; i < boxText1; i++) {
+	boxText1[i].addEventListener('click', wrapper);
+};
