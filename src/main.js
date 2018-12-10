@@ -80,6 +80,30 @@ function wrapper2() {
 	loopThrough2();
 };
 
+function wrapper3() {
+	const loopThrough3 = () => {
+		let thisNumber = this.childNodes[0].innerHTML;
+		let numberValue = Number(thisNumber);
+
+		for (let i = 0; i < numberValue * 2; i++) {
+			setTimeout(function() {
+				if (firstFunctionIndexNumbers.includes(i)) {
+					upDown();
+				} else {
+					leftRight();
+				}
+			}, i * 500);
+		}
+		setTimeout(function() {
+			page3.classList.add('hide');
+			page3.classList.remove('show');
+			yourFortune.classList.remove('hide');
+			yourFortune.classList.add('show');
+		}, numberValue * 1000);
+	};
+	loopThrough3();
+};
+
 
 for(let i = 0; i < boxText1.length; i++) {
 	boxText1[i].addEventListener('click', wrapper);
@@ -87,4 +111,8 @@ for(let i = 0; i < boxText1.length; i++) {
 
 for(let i = 0; i < boxText2.length; i++) {
 	boxText2[i].addEventListener('click', wrapper2);
+};
+
+for(let i = 0; i < boxText3.length; i++) {
+	boxText3[i].addEventListener('click', wrapper3);
 };
