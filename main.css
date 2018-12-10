@@ -23,11 +23,13 @@ body {
 h1 {
 	font-family: 'Fredoka One', cursive;
 	font-size: 3rem;
+	padding: 50px 0 50px 0;
+	text-align: center;
 }
 
 h2 {
 	font-family: 'Fredoka One', cursive;
-	font-size: 2rem;
+	font-size: 3rem;
 }
 
 #page1 {
