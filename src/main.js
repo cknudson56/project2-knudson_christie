@@ -56,7 +56,35 @@ function wrapper() {
 	loopThrough();
 };
 
+function wrapper2() {
+	const loopThrough2 = () => {
+		let thisNumber = this.childNodes[0].innerHTML;
+		let numberValue = Number(thisNumber);
+
+		for (let i = 0; i < numberValue * 2; i++) {
+			setTimeout(function() {
+				if (firstFunctionIndexNumbers.includes(i)) {
+					upDown();
+				} else {
+					leftRight();
+				}
+			}, i * 500);
+		}
+		setTimeout(function() {
+			page2.classList.add('hide');
+			page2.classList.remove('show');
+			page3.classList.remove('hide');
+			page3.classList.add('show');
+		}, numberValue * 1000);
+	};
+	loopThrough2();
+};
+
 
 for(let i = 0; i < boxText1.length; i++) {
 	boxText1[i].addEventListener('click', wrapper);
+};
+
+for(let i = 0; i < boxText2.length; i++) {
+	boxText2[i].addEventListener('click', wrapper2);
 };
