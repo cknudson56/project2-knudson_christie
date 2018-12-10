@@ -47,6 +47,11 @@ function wrapper() {
 				}
 			}, i * 500);
 		}
+		setTimeout(function() {
+			page1.classList.add('hide');
+			page2.classList.remove('hide');
+			page2.classList.add('show');
+		}, thisBoxLength * 1000);
 	};
 	loopThrough();
 };
