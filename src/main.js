@@ -13,18 +13,18 @@ const firstFunctionIndexNumbers = [0,1,4,5,8,9,12,13,16,17,20,21,24,25];
 
 const upDown = () => {
 	for(let i = 0; i < topBlock.length; i++) {
-		topBlock[i].classList.toggle('');
+		topBlock[i].classList.toggle('transition-up');
 	};
 	for(let i = 0; i < bottom.length; i++) {
-		bottom[i].classList.toggle('');
+		bottom[i].classList.toggle('transition-down');
 	};
 };
 const leftRight = () => {
 	for(let i = 0; i < left.length; i++) {
-		left[i].classList.toggle('');
+		left[i].classList.toggle('transition-left');
 	};
 	for(let i = 0; i < right.length; i++) {
-		right[i].classList.toggle('');
+		right[i].classList.toggle('transition-right');
 	};
 };
 
