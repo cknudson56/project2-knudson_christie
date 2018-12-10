@@ -77,12 +77,16 @@ h2 {
 	0% {
 		transform: translateY(0);
 	}
-	100% {
+	50% {
 		transform: translateY(-50px);
+	}
+	100% {
+		transform: translateY(0);
 	}
 }
 .transition-up {
-	animation: moveup 0.5s;
+	animation: moveup 0.5s ease-out;
+	animation-direction: alternate;
 }
 
 
@@ -91,12 +95,16 @@ h2 {
 	0% {
 		transform: translateY(0);
 	}
-	100% {
+	50% {
 		transform: translateY(50px);
+	}
+	100% {
+		transform: translateY(0);
 	}
 }
 .transition-down {
-	animation: movedown 0.5s;
+	animation: movedown 0.5s ease-out;
+	animation-direction: alternate;
 }
 
 
@@ -105,12 +113,16 @@ h2 {
 	0% {
 		transform: translateX(0);
 	}
-	100% {
+	50% {
 		transform: translateX(-50px);
+	}
+	100% {
+		transform: translateX(0);
 	}
 }
 .transition-left {
-	animation: moveleft 0.5s;
+	animation: moveleft 0.5s ease-out;
+	animation-direction: alternate;
 }
 
 
@@ -119,12 +131,16 @@ h2 {
 	0% {
 		transform: translateX(0);
 	}
-	100% {
+	50% {
 		transform: translateX(50px);
+	}
+	100% {
+		transform: translateX(0) ease-out;
 	}
 }
 .transition-right {
-	animation: moveright 0.5s;
+	animation: moveright 0.5s ease-out;
+	animation-direction: alternate;
 }
 
 
@@ -140,10 +156,9 @@ h2 {
 }
 
 .fortune-show {
-	opacity: 1 !important;
+	opacity: 1;
 	transition: opacity 3s ease-in;
-
-
+}
 
 
 	
